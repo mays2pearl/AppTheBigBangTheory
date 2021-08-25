@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="KGk-i7-Jjw" customClass="CardTableViewCell" customModule="TheBigBangTheory" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo cinza 2" translatesAutoresizingMaskIntoConstraints="NO" id="Lgf-Ff-WYZ">
+                        <rect key="frame" x="7" y="11" width="306" height="108"/>
+                        <color key="backgroundColor" red="0.56982785459999996" green="0.58682769540000002" blue="0.62936425210000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="108" id="uIL-fG-PQO"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Amy" translatesAutoresizingMaskIntoConstraints="NO" id="cro-ll-roP">
+                        <rect key="frame" x="16" y="21" width="80" height="91"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="80u-WL-6MC"/>
+                            <constraint firstAttribute="height" constant="91" id="lpx-97-vsm"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqI-7t-zrn">
+                        <rect key="frame" x="104" y="50" width="183" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7W-wr-MuB">
+                        <rect key="frame" x="97" y="43" width="207" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="207" id="13V-Xi-opJ"/>
+                            <constraint firstAttribute="height" constant="37" id="TQH-vT-3WK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                        <color key="textColor" red="1" green="0.92836239789999997" blue="0.97983812830000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="highlightedColor" red="1" green="0.14310868809999999" blue="0.1234777888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <size key="shadowOffset" width="1" height="1"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Lgf-Ff-WYZ" secondAttribute="bottom" constant="11" id="JKg-gr-fSN"/>
+                    <constraint firstAttribute="trailing" secondItem="Lgf-Ff-WYZ" secondAttribute="trailing" constant="7" id="Jhf-j4-Ya8"/>
+                    <constraint firstItem="Lgf-Ff-WYZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Let-HZ-aEj"/>
+                    <constraint firstItem="D7W-wr-MuB" firstAttribute="leading" secondItem="cro-ll-roP" secondAttribute="trailing" constant="1" id="Mz6-yV-Orf"/>
+                    <constraint firstItem="cro-ll-roP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="Q2y-PQ-Ies"/>
+                    <constraint firstItem="D7W-wr-MuB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="43" id="Z6T-vX-RGg"/>
+                    <constraint firstItem="cro-ll-roP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="nND-xz-xya"/>
+                    <constraint firstItem="Lgf-Ff-WYZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="x4c-Y0-Nbm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="2HT-Ia-1lz"/>
+            <connections>
+                <outlet property="cardBackgroundImageView" destination="Lgf-Ff-WYZ" id="Hmq-iL-ze3"/>
+                <outlet property="nomeLabel" destination="D7W-wr-MuB" id="Bty-U5-TEz"/>
+                <outlet property="perfilImageView" destination="cro-ll-roP" id="1sa-x4-tJC"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Amy" width="653" height="980"/>
+        <image name="fundo cinza 2" width="509" height="339"/>
+    </resources>
+</document>
